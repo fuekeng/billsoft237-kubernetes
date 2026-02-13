@@ -5,6 +5,7 @@ app = Flask(__name__)
 
 # Lire depuis variable d'environnement avec valeur par défaut
 PORT = int(os.environ.get("FLASK_PORT", 5000))
+print(f"Flask will run on port: {PORT}")
 
 @app.route("/")
 def hello():
